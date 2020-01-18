@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B058CDC223D38E8200436A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDC123D38E8200436A9F /* AppDelegate.swift */; };
-		B058CDC423D38E8200436A9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDC323D38E8200436A9F /* ViewController.swift */; };
+		B058CDC423D38E8200436A9F /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDC323D38E8200436A9F /* ARViewController.swift */; };
 		B058CDC623D38E8200436A9F /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B058CDC523D38E8200436A9F /* Experience.rcproject */; };
 		B058CDC923D38E8200436A9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B058CDC723D38E8200436A9F /* Main.storyboard */; };
 		B058CDCB23D38E8200436A9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B058CDCA23D38E8200436A9F /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		B058CDBE23D38E8200436A9F /* VSiBL Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VSiBL Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B058CDC123D38E8200436A9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B058CDC323D38E8200436A9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B058CDC323D38E8200436A9F /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		B058CDC523D38E8200436A9F /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		B058CDC823D38E8200436A9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B058CDCA23D38E8200436A9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,11 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				B058CDC123D38E8200436A9F /* AppDelegate.swift */,
-				B058CDC323D38E8200436A9F /* ViewController.swift */,
+				B058CDC323D38E8200436A9F /* ARViewController.swift */,
 				B058CDC523D38E8200436A9F /* Experience.rcproject */,
-				B058CDC723D38E8200436A9F /* Main.storyboard */,
+				B058CDF123D3922000436A9F /* Storyboards */,
 				B058CDCA23D38E8200436A9F /* Assets.xcassets */,
-				B058CDCC23D38E8200436A9F /* LaunchScreen.storyboard */,
 				B058CDCF23D38E8200436A9F /* Info.plist */,
 			);
 			path = "VSiBL Prototype";
@@ -126,6 +125,15 @@
 				B058CDE523D38E8300436A9F /* Info.plist */,
 			);
 			path = "VSiBL PrototypeUITests";
+			sourceTree = "<group>";
+		};
+		B058CDF123D3922000436A9F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B058CDC723D38E8200436A9F /* Main.storyboard */,
+				B058CDCC23D38E8200436A9F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B058CDC423D38E8200436A9F /* ViewController.swift in Sources */,
+				B058CDC423D38E8200436A9F /* ARViewController.swift in Sources */,
 				B058CDC223D38E8200436A9F /* AppDelegate.swift in Sources */,
 				B058CDC623D38E8200436A9F /* Experience.rcproject in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ARViewController.swift
 //  VSiBL Prototype
 //
 //  Created by User239 on 1/18/20.
@@ -9,7 +9,7 @@
 import UIKit
 import RealityKit
 
-class ViewController: UIViewController {
+class ARViewController: UIViewController {
     
     @IBOutlet var arView: ARView!
     
