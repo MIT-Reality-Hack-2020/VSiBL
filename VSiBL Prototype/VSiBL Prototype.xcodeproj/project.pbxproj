@@ -15,6 +15,8 @@
 		B058CDCE23D38E8200436A9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B058CDCC23D38E8200436A9F /* LaunchScreen.storyboard */; };
 		B058CDD923D38E8300436A9F /* VSiBL_PrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDD823D38E8300436A9F /* VSiBL_PrototypeTests.swift */; };
 		B058CDE423D38E8300436A9F /* VSiBL_PrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDE323D38E8300436A9F /* VSiBL_PrototypeUITests.swift */; };
+		B058CDF423D3977C00436A9F /* ARViewController+Multipeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDF323D3977C00436A9F /* ARViewController+Multipeer.swift */; };
+		B058CDF723D397AD00436A9F /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDF623D397AD00436A9F /* MultipeerSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B058CDDF23D38E8300436A9F /* VSiBL PrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VSiBL PrototypeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B058CDE323D38E8300436A9F /* VSiBL_PrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSiBL_PrototypeUITests.swift; sourceTree = "<group>"; };
 		B058CDE523D38E8300436A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B058CDF323D3977C00436A9F /* ARViewController+Multipeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+Multipeer.swift"; sourceTree = "<group>"; };
+		B058CDF623D397AD00436A9F /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				B058CDC123D38E8200436A9F /* AppDelegate.swift */,
-				B058CDC323D38E8200436A9F /* ARViewController.swift */,
+				B058CDF223D3975100436A9F /* Controllers */,
 				B058CDC523D38E8200436A9F /* Experience.rcproject */,
+				B058CDF523D397A200436A9F /* External */,
 				B058CDF123D3922000436A9F /* Storyboards */,
 				B058CDCA23D38E8200436A9F /* Assets.xcassets */,
 				B058CDCF23D38E8200436A9F /* Info.plist */,
@@ -134,6 +139,31 @@
 				B058CDCC23D38E8200436A9F /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B058CDF223D3975100436A9F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B058CDC323D38E8200436A9F /* ARViewController.swift */,
+				B058CDF323D3977C00436A9F /* ARViewController+Multipeer.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B058CDF523D397A200436A9F /* External */ = {
+			isa = PBXGroup;
+			children = (
+				B058CDF823D397B200436A9F /* Apple */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		B058CDF823D397B200436A9F /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				B058CDF623D397AD00436A9F /* MultipeerSession.swift */,
+			);
+			path = Apple;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +299,8 @@
 			files = (
 				B058CDC423D38E8200436A9F /* ARViewController.swift in Sources */,
 				B058CDC223D38E8200436A9F /* AppDelegate.swift in Sources */,
+				B058CDF723D397AD00436A9F /* MultipeerSession.swift in Sources */,
+				B058CDF423D3977C00436A9F /* ARViewController+Multipeer.swift in Sources */,
 				B058CDC623D38E8200436A9F /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
