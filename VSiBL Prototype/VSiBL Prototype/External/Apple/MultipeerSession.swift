@@ -36,6 +36,8 @@ class MultipeerSession: NSObject {
     private let peerJoinedHandler: (MCPeerID) -> Void
     private let peerLeftHandler: (MCPeerID) -> Void
     private let peerDiscoveredHandler: (MCPeerID) -> Bool
+    
+    public var peerSessionIDs = [MCPeerID: String]() // A dictionary to map MultiPeer IDs to ARSession ID's. This is useful for keeping track of which peer created which ARAnchors. 
 
     /// - Tag: MultipeerSetup
     init(serviceType: String,

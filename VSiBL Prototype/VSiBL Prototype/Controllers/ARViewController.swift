@@ -29,16 +29,14 @@ class ARViewController: UIViewController {
     
     @IBOutlet var arView: ARView!
     
+    // Properties
+    var multipeerSession: MultipeerSession?
+    var sessionIDObservation: NSKeyValueObservation?
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         setupARView()
-        
-        // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
-        
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
     }
     
     private func setupARView() {
