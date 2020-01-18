@@ -111,12 +111,12 @@ extension ARViewController: ARSessionDelegate {
             if let participantAnchor = anchor as? ARParticipantAnchor {
                 print("Established joint experience with a peer.")
                 
-                let mesh = MeshResource.generateSphere(radius: 0.05)
-                let color = UIColor.white
+                let mesh = MeshResource.generateSphere(radius: 0.07)
+                let color = UIColor.cyan
                 let material = UnlitMaterial(color: color)
                 let userAvatar = ModelEntity(mesh: mesh, materials: [material])
                 
-                userAvatar.position = [0, -0.3, 0.7] // TODO FIX: Hacky - Needs to be more elegant (e.g. joint or face detection to offset position)
+                userAvatar.position = [0, -0.4, 0.4] // TODO FIX: Hacky - Needs to be more elegant (e.g. joint or face detection to offset position)
                 
                 let anchorEntity = AnchorEntity(anchor: participantAnchor)
                 anchorEntity.addChild(userAvatar)
