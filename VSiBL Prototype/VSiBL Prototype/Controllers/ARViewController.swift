@@ -33,11 +33,33 @@ class ARViewController: UIViewController {
     var multipeerSession: MultipeerSession?
     var sessionIDObservation: NSKeyValueObservation?
     
+    
+    // MARK: - View Methods
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        UIApplication.shared.isIdleTimerDisabled = true // Prevent the screen from being dimmed to avoid interrupting the AR experience.
+
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         setupARView()
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        // Request that iOS hide the status bar to improve immersiveness of the AR experience.
+        return true
+    }
+    
+    override var prefersHomeIndicatorAutoHidden: Bool {
+        // Request that iOS hide the home indicator to improve immersiveness of the AR experience.
+        return true
+    }
+    
+    // MARK: - Setup Methods
     
     private func setupARView() {
         arView.automaticallyConfigureSession = false
@@ -45,5 +67,23 @@ class ARViewController: UIViewController {
         config.isCollaborationEnabled = true
         config.planeDetection = [.horizontal, .vertical]
         arView.session.run(config)
+    }
+    
+    private func setupMultipeerSession() {
+        // Use key-value observation to monitor your ARSession's identifier.
+        sessionIDObservation = observe(\.arView.session.identifier, options: [.new]) { object, change in
+            print("SessionID changed to: \(change.newValue!)")
+            // Tell all other peers about your ARSession's changed ID, so
+            // that they can keep track of which ARAnchors are yours.
+            guard let multipeerSession = self.multipeerSession else { return }
+            self.sendARSessionIDTo(peers: multipeerSession.connectedPeers)
+        }
+                
+        // Start looking for other players via MultiPeerConnectivity.
+        multipeerSession = MultipeerSession(serviceType: "vsibl-rh2020",
+                                            receivedDataHandler: receivedData,
+                                            peerJoinedHandler: peerJoined,
+                                            peerLeftHandler: peerLeft,
+                                            peerDiscoveredHandler: peerDiscovered)
     }
 }
