@@ -47,6 +47,7 @@ class ARViewController: UIViewController {
         super.viewDidAppear(animated)
         
         setupARView()
+        setupMultipeerSession()
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -63,9 +64,12 @@ class ARViewController: UIViewController {
     
     private func setupARView() {
         arView.automaticallyConfigureSession = false
+        arView.session.delegate = self
+        
         let config = ARWorldTrackingConfiguration()
         config.isCollaborationEnabled = true
         config.planeDetection = [.horizontal, .vertical]
+        
         arView.session.run(config)
     }
     
@@ -85,5 +89,38 @@ class ARViewController: UIViewController {
                                             peerJoinedHandler: peerJoined,
                                             peerLeftHandler: peerLeft,
                                             peerDiscoveredHandler: peerDiscovered)
+    }
+}
+
+extension ARViewController: ARSessionDelegate {
+    func session(_ session: ARSession, didOutputCollaborationData data: ARSession.CollaborationData) {
+        guard let multipeerSession = multipeerSession else { return }
+        if !multipeerSession.connectedPeers.isEmpty {
+            guard let encodedData = try? NSKeyedArchiver.archivedData(withRootObject: data, requiringSecureCoding: true)
+            else { fatalError("Unexpectedly failed to encode collaboration data.") }
+            // Use reliable mode if the data is critical, and unreliable mode if the data is optional.
+            let dataIsCritical = data.priority == .critical
+            multipeerSession.sendToAllPeers(encodedData, reliably: dataIsCritical)
+        } else {
+            print("Deferred sending collaboration to later because there are no peers.")
+        }
+    }
+    
+    func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
+        for anchor in anchors {
+            if let participantAnchor = anchor as? ARParticipantAnchor {
+                print("Established joint experience with a peer.")
+
+                let mesh = MeshResource.generateSphere(radius: 0.05)
+                let color = UIColor.white
+                let material = UnlitMaterial(color: color)
+                let userAvatar = ModelEntity(mesh: mesh, materials: [material])
+                
+                let anchorEntity = AnchorEntity(anchor: participantAnchor)
+                anchorEntity.addChild(userAvatar)
+                
+                arView.scene.addAnchor(anchorEntity)
+            }
+        }
     }
 }
