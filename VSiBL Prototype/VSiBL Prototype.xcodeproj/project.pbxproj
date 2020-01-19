@@ -17,6 +17,11 @@
 		B058CDE423D38E8300436A9F /* VSiBL_PrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDE323D38E8300436A9F /* VSiBL_PrototypeUITests.swift */; };
 		B058CDF423D3977C00436A9F /* ARViewController+Multipeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDF323D3977C00436A9F /* ARViewController+Multipeer.swift */; };
 		B058CDF723D397AD00436A9F /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDF623D397AD00436A9F /* MultipeerSession.swift */; };
+		B0FF80D023D3D61A00C1F62E /* CyanAvatar.reality in Resources */ = {isa = PBXBuildFile; fileRef = B0FF80CB23D3D61A00C1F62E /* CyanAvatar.reality */; };
+		B0FF80D123D3D61A00C1F62E /* MagentaAvatar.reality in Resources */ = {isa = PBXBuildFile; fileRef = B0FF80CC23D3D61A00C1F62E /* MagentaAvatar.reality */; };
+		B0FF80D223D3D61A00C1F62E /* GreenAvatar.reality in Resources */ = {isa = PBXBuildFile; fileRef = B0FF80CD23D3D61A00C1F62E /* GreenAvatar.reality */; };
+		B0FF80D323D3D61A00C1F62E /* PurpleAvatar.reality in Resources */ = {isa = PBXBuildFile; fileRef = B0FF80CE23D3D61A00C1F62E /* PurpleAvatar.reality */; };
+		B0FF80D423D3D61A00C1F62E /* YellowAvatar.reality in Resources */ = {isa = PBXBuildFile; fileRef = B0FF80CF23D3D61A00C1F62E /* YellowAvatar.reality */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		B058CDE523D38E8300436A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B058CDF323D3977C00436A9F /* ARViewController+Multipeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+Multipeer.swift"; sourceTree = "<group>"; };
 		B058CDF623D397AD00436A9F /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
+		B0FF80CB23D3D61A00C1F62E /* CyanAvatar.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = CyanAvatar.reality; path = ../../../../../../Downloads/CyanAvatar.reality; sourceTree = "<group>"; };
+		B0FF80CC23D3D61A00C1F62E /* MagentaAvatar.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = MagentaAvatar.reality; path = ../../../../../../Downloads/MagentaAvatar.reality; sourceTree = "<group>"; };
+		B0FF80CD23D3D61A00C1F62E /* GreenAvatar.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = GreenAvatar.reality; path = ../../../../../../Downloads/GreenAvatar.reality; sourceTree = "<group>"; };
+		B0FF80CE23D3D61A00C1F62E /* PurpleAvatar.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = PurpleAvatar.reality; path = ../../../../../../Downloads/PurpleAvatar.reality; sourceTree = "<group>"; };
+		B0FF80CF23D3D61A00C1F62E /* YellowAvatar.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = YellowAvatar.reality; path = ../../../../../../Downloads/YellowAvatar.reality; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,7 @@
 				B058CDC123D38E8200436A9F /* AppDelegate.swift */,
 				B058CDF223D3975100436A9F /* Controllers */,
 				B058CDC523D38E8200436A9F /* Experience.rcproject */,
+				B0FF80CA23D3D60C00C1F62E /* Models */,
 				B058CDF523D397A200436A9F /* External */,
 				B058CDF123D3922000436A9F /* Storyboards */,
 				B058CDCA23D38E8200436A9F /* Assets.xcassets */,
@@ -164,6 +175,18 @@
 				B058CDF623D397AD00436A9F /* MultipeerSession.swift */,
 			);
 			path = Apple;
+			sourceTree = "<group>";
+		};
+		B0FF80CA23D3D60C00C1F62E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0FF80CB23D3D61A00C1F62E /* CyanAvatar.reality */,
+				B0FF80CD23D3D61A00C1F62E /* GreenAvatar.reality */,
+				B0FF80CC23D3D61A00C1F62E /* MagentaAvatar.reality */,
+				B0FF80CE23D3D61A00C1F62E /* PurpleAvatar.reality */,
+				B0FF80CF23D3D61A00C1F62E /* YellowAvatar.reality */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +293,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0FF80D023D3D61A00C1F62E /* CyanAvatar.reality in Resources */,
+				B0FF80D123D3D61A00C1F62E /* MagentaAvatar.reality in Resources */,
 				B058CDCE23D38E8200436A9F /* LaunchScreen.storyboard in Resources */,
+				B0FF80D223D3D61A00C1F62E /* GreenAvatar.reality in Resources */,
+				B0FF80D323D3D61A00C1F62E /* PurpleAvatar.reality in Resources */,
 				B058CDCB23D38E8200436A9F /* Assets.xcassets in Resources */,
 				B058CDC923D38E8200436A9F /* Main.storyboard in Resources */,
+				B0FF80D423D3D61A00C1F62E /* YellowAvatar.reality in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
