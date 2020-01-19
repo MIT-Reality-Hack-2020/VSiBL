@@ -33,6 +33,7 @@ class ARViewController: UIViewController {
     var multipeerSession: MultipeerSession?
     var sessionIDObservation: NSKeyValueObservation?
     
+    var lightAnchor = AnchorEntity(world: [0, 0, 0])
     
     // MARK: - View Methods
     
@@ -48,6 +49,7 @@ class ARViewController: UIViewController {
         
         setupARView()
         setupMultipeerSession()
+        setupLights()
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -68,6 +70,7 @@ class ARViewController: UIViewController {
         
         let config = ARWorldTrackingConfiguration()
         config.isCollaborationEnabled = true
+        config.environmentTexturing = .automatic
         config.planeDetection = [.horizontal, .vertical]
         
         arView.session.run(config)
@@ -89,6 +92,11 @@ class ARViewController: UIViewController {
                                             peerJoinedHandler: peerJoined,
                                             peerLeftHandler: peerLeft,
                                             peerDiscoveredHandler: peerDiscovered)
+    }
+    
+    private func setupLights() {
+        let light = DirectionalLight()
+        lightAnchor.addChild(light)        
     }
 }
 
@@ -125,5 +133,9 @@ extension ARViewController: ARSessionDelegate {
                 arView.scene.addAnchor(anchorEntity)
             }
         }
+    }
+    
+    func session(_ session: ARSession, didUpdate frame: ARFrame) {
+        self.lightAnchor.move(to: frame.camera.transform, relativeTo: nil)
     }
 }
