@@ -117,6 +117,8 @@ extension ARViewController: ARSessionDelegate {
                 
                 userAvatar.orientation = simd_quatf(angle: .pi/2, axis: [1, 0, 0]) // Orientation fix for cone
                 
+                userAvatar.scale = [2, 2, 2]
+                
                 let anchorEntity = AnchorEntity(anchor: participantAnchor)
                 anchorEntity.addChild(userAvatar)
                 
