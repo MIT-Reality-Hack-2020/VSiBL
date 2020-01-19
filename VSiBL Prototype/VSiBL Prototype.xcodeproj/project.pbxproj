@@ -21,6 +21,7 @@
 		B0BB3C5323D40373001BF466 /* IncognitoAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C5223D40372001BF466 /* IncognitoAvatar.rcproject */; };
 		B0BB3C5523D40455001BF466 /* DesignerAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C5423D40455001BF466 /* DesignerAvatar.rcproject */; };
 		B0BB3C5723D405C0001BF466 /* StaffAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C5623D405C0001BF466 /* StaffAvatar.rcproject */; };
+		B0BB3C5D23D412F2001BF466 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C5C23D412F2001BF466 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		B0BB3C5223D40372001BF466 /* IncognitoAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = IncognitoAvatar.rcproject; sourceTree = "<group>"; };
 		B0BB3C5423D40455001BF466 /* DesignerAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = DesignerAvatar.rcproject; sourceTree = "<group>"; };
 		B0BB3C5623D405C0001BF466 /* StaffAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = StaffAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C5C23D412F2001BF466 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				B058CDC123D38E8200436A9F /* AppDelegate.swift */,
+				B0BB3C5B23D412E5001BF466 /* Models */,
 				B058CDF223D3975100436A9F /* Controllers */,
 				B0FF80CA23D3D60C00C1F62E /* Assets */,
 				B058CDF523D397A200436A9F /* External */,
@@ -172,6 +175,14 @@
 				B058CDF623D397AD00436A9F /* MultipeerSession.swift */,
 			);
 			path = Apple;
+			sourceTree = "<group>";
+		};
+		B0BB3C5B23D412E5001BF466 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB3C5C23D412F2001BF466 /* Profile.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B0FF80CA23D3D60C00C1F62E /* Assets */ = {
@@ -318,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0BB3C4F23D3FCE2001BF466 /* DeveloperAvatar.rcproject in Sources */,
+				B0BB3C5D23D412F2001BF466 /* Profile.swift in Sources */,
 				B058CDC423D38E8200436A9F /* ARViewController.swift in Sources */,
 				B0BB3C5723D405C0001BF466 /* StaffAvatar.rcproject in Sources */,
 				B0BB3C5323D40373001BF466 /* IncognitoAvatar.rcproject in Sources */,

@@ -119,7 +119,9 @@ extension ARViewController: ARSessionDelegate {
             if let participantAnchor = anchor as? ARParticipantAnchor {
                 print("Established joint experience with a peer.")
                 
-                let userAvatar = try! ModelEntity.load(named: "DeveloperAvatar")
+                let userRole = participantAnchor.sessionIdentifier?.toRandomRole() ?? UserRole.staff // TODO FIX: We are randomly assigning a predefined role based on a unique sessionIdentifier of the participant. This should be refactored to for example use profiels stored in a secure cloud-connected database.
+                
+                let userAvatar = try! ModelEntity.load(named: userRole.description)
                 
                 userAvatar.position = [0, -0.4, 0.4] // TODO FIX: Hacky - Needs to be more elegant (e.g. joint or face detection to offset position)
                 
@@ -137,5 +139,22 @@ extension ARViewController: ARSessionDelegate {
     
     func session(_ session: ARSession, didUpdate frame: ARFrame) {
         self.lightAnchor.move(to: frame.camera.transform, relativeTo: nil)
+    }
+}
+
+// MARK: - Randomized Role Assigment
+
+extension UUID {
+    // Pseudo-randomly return one of several static roles, based on this UUID's first four bytes.
+    func toRandomRole() -> UserRole {
+        var firstFourUUIDBytesAsUInt32: UInt32 = 0
+        let data = withUnsafePointer(to: self) {
+            return Data(bytes: $0, count: MemoryLayout.size(ofValue: self))
+        }
+        _ = withUnsafeMutableBytes(of: &firstFourUUIDBytesAsUInt32, { data.copyBytes(to: $0) })
+        
+        let userRoles = UserRole.allRoles
+        let randomNumber = Int(firstFourUUIDBytesAsUInt32) % userRoles.count
+        return userRoles[randomNumber]
     }
 }
