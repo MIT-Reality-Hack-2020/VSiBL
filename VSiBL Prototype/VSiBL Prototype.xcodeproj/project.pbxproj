@@ -17,11 +17,12 @@
 		B058CDE423D38E8300436A9F /* VSiBL_PrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDE323D38E8300436A9F /* VSiBL_PrototypeUITests.swift */; };
 		B058CDF423D3977C00436A9F /* ARViewController+Multipeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDF323D3977C00436A9F /* ARViewController+Multipeer.swift */; };
 		B058CDF723D397AD00436A9F /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDF623D397AD00436A9F /* MultipeerSession.swift */; };
-		B0BB3C3D23D3DC20001BF466 /* CyanAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C3823D3DC20001BF466 /* CyanAvatar.rcproject */; };
-		B0BB3C3E23D3DC20001BF466 /* YellowAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C3923D3DC20001BF466 /* YellowAvatar.rcproject */; };
-		B0BB3C3F23D3DC20001BF466 /* PurpleAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C3A23D3DC20001BF466 /* PurpleAvatar.rcproject */; };
-		B0BB3C4023D3DC20001BF466 /* GreenAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C3B23D3DC20001BF466 /* GreenAvatar.rcproject */; };
-		B0BB3C4123D3DC20001BF466 /* MagentaAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C3C23D3DC20001BF466 /* MagentaAvatar.rcproject */; };
+		B0BB3C4323D3FADE001BF466 /* GrayAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C4223D3FADE001BF466 /* GrayAvatar.rcproject */; };
+		B0BB3C4923D3FB6C001BF466 /* YellowAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C4423D3FB6C001BF466 /* YellowAvatar.rcproject */; };
+		B0BB3C4A23D3FB6C001BF466 /* PurpleAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C4523D3FB6C001BF466 /* PurpleAvatar.rcproject */; };
+		B0BB3C4B23D3FB6C001BF466 /* MagentaAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C4623D3FB6C001BF466 /* MagentaAvatar.rcproject */; };
+		B0BB3C4C23D3FB6C001BF466 /* CyanAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C4723D3FB6C001BF466 /* CyanAvatar.rcproject */; };
+		B0BB3C4D23D3FB6C001BF466 /* GreenAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C4823D3FB6C001BF466 /* GreenAvatar.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,11 +59,12 @@
 		B058CDE523D38E8300436A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B058CDF323D3977C00436A9F /* ARViewController+Multipeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+Multipeer.swift"; sourceTree = "<group>"; };
 		B058CDF623D397AD00436A9F /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
-		B0BB3C3823D3DC20001BF466 /* CyanAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = CyanAvatar.rcproject; path = ../../../../../../Downloads/CyanAvatar.rcproject; sourceTree = "<group>"; };
-		B0BB3C3923D3DC20001BF466 /* YellowAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = YellowAvatar.rcproject; path = ../../../../../../Downloads/YellowAvatar.rcproject; sourceTree = "<group>"; };
-		B0BB3C3A23D3DC20001BF466 /* PurpleAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = PurpleAvatar.rcproject; path = ../../../../../../Downloads/PurpleAvatar.rcproject; sourceTree = "<group>"; };
-		B0BB3C3B23D3DC20001BF466 /* GreenAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = GreenAvatar.rcproject; path = ../../../../../../Downloads/GreenAvatar.rcproject; sourceTree = "<group>"; };
-		B0BB3C3C23D3DC20001BF466 /* MagentaAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = MagentaAvatar.rcproject; path = ../../../../../../Downloads/MagentaAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C4223D3FADE001BF466 /* GrayAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = GrayAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C4423D3FB6C001BF466 /* YellowAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = YellowAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C4523D3FB6C001BF466 /* PurpleAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = PurpleAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C4623D3FB6C001BF466 /* MagentaAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = MagentaAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C4723D3FB6C001BF466 /* CyanAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = CyanAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C4823D3FB6C001BF466 /* GreenAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = GreenAvatar.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,11 +182,12 @@
 		B0FF80CA23D3D60C00C1F62E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B0BB3C3823D3DC20001BF466 /* CyanAvatar.rcproject */,
-				B0BB3C3B23D3DC20001BF466 /* GreenAvatar.rcproject */,
-				B0BB3C3C23D3DC20001BF466 /* MagentaAvatar.rcproject */,
-				B0BB3C3A23D3DC20001BF466 /* PurpleAvatar.rcproject */,
-				B0BB3C3923D3DC20001BF466 /* YellowAvatar.rcproject */,
+				B0BB3C4723D3FB6C001BF466 /* CyanAvatar.rcproject */,
+				B0BB3C4823D3FB6C001BF466 /* GreenAvatar.rcproject */,
+				B0BB3C4623D3FB6C001BF466 /* MagentaAvatar.rcproject */,
+				B0BB3C4523D3FB6C001BF466 /* PurpleAvatar.rcproject */,
+				B0BB3C4423D3FB6C001BF466 /* YellowAvatar.rcproject */,
+				B0BB3C4223D3FADE001BF466 /* GrayAvatar.rcproject */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -322,14 +325,15 @@
 			files = (
 				B058CDC423D38E8200436A9F /* ARViewController.swift in Sources */,
 				B058CDC223D38E8200436A9F /* AppDelegate.swift in Sources */,
-				B0BB3C4023D3DC20001BF466 /* GreenAvatar.rcproject in Sources */,
-				B0BB3C3E23D3DC20001BF466 /* YellowAvatar.rcproject in Sources */,
-				B0BB3C3D23D3DC20001BF466 /* CyanAvatar.rcproject in Sources */,
-				B0BB3C4123D3DC20001BF466 /* MagentaAvatar.rcproject in Sources */,
+				B0BB3C4923D3FB6C001BF466 /* YellowAvatar.rcproject in Sources */,
+				B0BB3C4323D3FADE001BF466 /* GrayAvatar.rcproject in Sources */,
+				B0BB3C4C23D3FB6C001BF466 /* CyanAvatar.rcproject in Sources */,
 				B058CDF723D397AD00436A9F /* MultipeerSession.swift in Sources */,
 				B058CDF423D3977C00436A9F /* ARViewController+Multipeer.swift in Sources */,
+				B0BB3C4D23D3FB6C001BF466 /* GreenAvatar.rcproject in Sources */,
+				B0BB3C4B23D3FB6C001BF466 /* MagentaAvatar.rcproject in Sources */,
 				B058CDC623D38E8200436A9F /* Experience.rcproject in Sources */,
-				B0BB3C3F23D3DC20001BF466 /* PurpleAvatar.rcproject in Sources */,
+				B0BB3C4A23D3FB6C001BF466 /* PurpleAvatar.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
