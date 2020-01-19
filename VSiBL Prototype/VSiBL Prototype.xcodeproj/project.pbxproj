@@ -116,7 +116,7 @@
 				B058CDC123D38E8200436A9F /* AppDelegate.swift */,
 				B058CDF223D3975100436A9F /* Controllers */,
 				B058CDC523D38E8200436A9F /* Experience.rcproject */,
-				B0FF80CA23D3D60C00C1F62E /* Models */,
+				B0FF80CA23D3D60C00C1F62E /* Assets */,
 				B058CDF523D397A200436A9F /* External */,
 				B058CDF123D3922000436A9F /* Storyboards */,
 				B058CDCA23D38E8200436A9F /* Assets.xcassets */,
@@ -177,7 +177,7 @@
 			path = Apple;
 			sourceTree = "<group>";
 		};
-		B0FF80CA23D3D60C00C1F62E /* Models */ = {
+		B0FF80CA23D3D60C00C1F62E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
 				B0BB3C5423D40455001BF466 /* DesignerAvatar.rcproject */,
@@ -186,7 +186,7 @@
 				B0BB3C4E23D3FCE2001BF466 /* DeveloperAvatar.rcproject */,
 				B0BB3C5623D405C0001BF466 /* StaffAvatar.rcproject */,
 			);
-			path = Models;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
