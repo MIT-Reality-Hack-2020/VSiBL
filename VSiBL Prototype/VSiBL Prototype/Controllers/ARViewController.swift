@@ -119,7 +119,7 @@ extension ARViewController: ARSessionDelegate {
             if let participantAnchor = anchor as? ARParticipantAnchor {
                 print("Established joint experience with a peer.")
                 
-                let userAvatar = try! ModelEntity.load(named: "MagentaAvatar")
+                let userAvatar = try! ModelEntity.load(named: "DeveloperAvatar")
                 
                 userAvatar.position = [0, -0.4, 0.4] // TODO FIX: Hacky - Needs to be more elegant (e.g. joint or face detection to offset position)
                 

@@ -23,6 +23,11 @@
 		B0BB3C4B23D3FB6C001BF466 /* MagentaAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C4623D3FB6C001BF466 /* MagentaAvatar.rcproject */; };
 		B0BB3C4C23D3FB6C001BF466 /* CyanAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C4723D3FB6C001BF466 /* CyanAvatar.rcproject */; };
 		B0BB3C4D23D3FB6C001BF466 /* GreenAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C4823D3FB6C001BF466 /* GreenAvatar.rcproject */; };
+		B0BB3C4F23D3FCE2001BF466 /* DeveloperAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C4E23D3FCE2001BF466 /* DeveloperAvatar.rcproject */; };
+		B0BB3C5123D402C1001BF466 /* StorytellerAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C5023D402C1001BF466 /* StorytellerAvatar.rcproject */; };
+		B0BB3C5323D40373001BF466 /* IncognitoAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C5223D40372001BF466 /* IncognitoAvatar.rcproject */; };
+		B0BB3C5523D40455001BF466 /* DesignerAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C5423D40455001BF466 /* DesignerAvatar.rcproject */; };
+		B0BB3C5723D405C0001BF466 /* StaffAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C5623D405C0001BF466 /* StaffAvatar.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		B0BB3C4623D3FB6C001BF466 /* MagentaAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = MagentaAvatar.rcproject; sourceTree = "<group>"; };
 		B0BB3C4723D3FB6C001BF466 /* CyanAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = CyanAvatar.rcproject; sourceTree = "<group>"; };
 		B0BB3C4823D3FB6C001BF466 /* GreenAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = GreenAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C4E23D3FCE2001BF466 /* DeveloperAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = DeveloperAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C5023D402C1001BF466 /* StorytellerAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = StorytellerAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C5223D40372001BF466 /* IncognitoAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = IncognitoAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C5423D40455001BF466 /* DesignerAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = DesignerAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C5623D405C0001BF466 /* StaffAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = StaffAvatar.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +192,11 @@
 		B0FF80CA23D3D60C00C1F62E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B0BB3C5423D40455001BF466 /* DesignerAvatar.rcproject */,
+				B0BB3C5223D40372001BF466 /* IncognitoAvatar.rcproject */,
+				B0BB3C5023D402C1001BF466 /* StorytellerAvatar.rcproject */,
+				B0BB3C4E23D3FCE2001BF466 /* DeveloperAvatar.rcproject */,
+				B0BB3C5623D405C0001BF466 /* StaffAvatar.rcproject */,
 				B0BB3C4723D3FB6C001BF466 /* CyanAvatar.rcproject */,
 				B0BB3C4823D3FB6C001BF466 /* GreenAvatar.rcproject */,
 				B0BB3C4623D3FB6C001BF466 /* MagentaAvatar.rcproject */,
@@ -323,7 +338,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0BB3C4F23D3FCE2001BF466 /* DeveloperAvatar.rcproject in Sources */,
 				B058CDC423D38E8200436A9F /* ARViewController.swift in Sources */,
+				B0BB3C5723D405C0001BF466 /* StaffAvatar.rcproject in Sources */,
+				B0BB3C5323D40373001BF466 /* IncognitoAvatar.rcproject in Sources */,
 				B058CDC223D38E8200436A9F /* AppDelegate.swift in Sources */,
 				B0BB3C4923D3FB6C001BF466 /* YellowAvatar.rcproject in Sources */,
 				B0BB3C4323D3FADE001BF466 /* GrayAvatar.rcproject in Sources */,
@@ -333,6 +351,8 @@
 				B0BB3C4D23D3FB6C001BF466 /* GreenAvatar.rcproject in Sources */,
 				B0BB3C4B23D3FB6C001BF466 /* MagentaAvatar.rcproject in Sources */,
 				B058CDC623D38E8200436A9F /* Experience.rcproject in Sources */,
+				B0BB3C5123D402C1001BF466 /* StorytellerAvatar.rcproject in Sources */,
+				B0BB3C5523D40455001BF466 /* DesignerAvatar.rcproject in Sources */,
 				B0BB3C4A23D3FB6C001BF466 /* PurpleAvatar.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
