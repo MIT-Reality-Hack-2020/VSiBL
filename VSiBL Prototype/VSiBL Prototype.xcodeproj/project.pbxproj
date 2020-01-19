@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B058CDC223D38E8200436A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDC123D38E8200436A9F /* AppDelegate.swift */; };
 		B058CDC423D38E8200436A9F /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDC323D38E8200436A9F /* ARViewController.swift */; };
-		B058CDC623D38E8200436A9F /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B058CDC523D38E8200436A9F /* Experience.rcproject */; };
 		B058CDC923D38E8200436A9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B058CDC723D38E8200436A9F /* Main.storyboard */; };
 		B058CDCB23D38E8200436A9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B058CDCA23D38E8200436A9F /* Assets.xcassets */; };
 		B058CDCE23D38E8200436A9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B058CDCC23D38E8200436A9F /* LaunchScreen.storyboard */; };
@@ -45,7 +44,6 @@
 		B058CDBE23D38E8200436A9F /* VSiBL Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VSiBL Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B058CDC123D38E8200436A9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B058CDC323D38E8200436A9F /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
-		B058CDC523D38E8200436A9F /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		B058CDC823D38E8200436A9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B058CDCA23D38E8200436A9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B058CDCD23D38E8200436A9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 			children = (
 				B058CDC123D38E8200436A9F /* AppDelegate.swift */,
 				B058CDF223D3975100436A9F /* Controllers */,
-				B058CDC523D38E8200436A9F /* Experience.rcproject */,
 				B0FF80CA23D3D60C00C1F62E /* Assets */,
 				B058CDF523D397A200436A9F /* External */,
 				B058CDF123D3922000436A9F /* Storyboards */,
@@ -327,7 +324,6 @@
 				B058CDC223D38E8200436A9F /* AppDelegate.swift in Sources */,
 				B058CDF723D397AD00436A9F /* MultipeerSession.swift in Sources */,
 				B058CDF423D3977C00436A9F /* ARViewController+Multipeer.swift in Sources */,
-				B058CDC623D38E8200436A9F /* Experience.rcproject in Sources */,
 				B0BB3C5123D402C1001BF466 /* StorytellerAvatar.rcproject in Sources */,
 				B0BB3C5523D40455001BF466 /* DesignerAvatar.rcproject in Sources */,
 			);
