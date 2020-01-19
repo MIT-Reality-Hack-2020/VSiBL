@@ -121,7 +121,9 @@ extension ARViewController: ARSessionDelegate {
                 
                 let userRole = participantAnchor.sessionIdentifier?.toRandomRole() ?? UserRole.staff // TODO FIX: We are randomly assigning a predefined role based on a unique sessionIdentifier of the participant. This should be refactored to for example use profiels stored in a secure cloud-connected database.
                 
-                let userAvatar = try! ModelEntity.load(named: userRole.description)
+                print(userRole.description)
+                
+                let userAvatar = try! ModelEntity.load(named: userRole.description + "Avatar")
                 
                 userAvatar.position = [0, -0.4, 0.4] // TODO FIX: Hacky - Needs to be more elegant (e.g. joint or face detection to offset position)
                 
