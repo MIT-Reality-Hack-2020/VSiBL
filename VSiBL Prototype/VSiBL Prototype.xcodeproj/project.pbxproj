@@ -17,11 +17,11 @@
 		B058CDE423D38E8300436A9F /* VSiBL_PrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDE323D38E8300436A9F /* VSiBL_PrototypeUITests.swift */; };
 		B058CDF423D3977C00436A9F /* ARViewController+Multipeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDF323D3977C00436A9F /* ARViewController+Multipeer.swift */; };
 		B058CDF723D397AD00436A9F /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058CDF623D397AD00436A9F /* MultipeerSession.swift */; };
-		B0FF80D023D3D61A00C1F62E /* CyanAvatar.reality in Resources */ = {isa = PBXBuildFile; fileRef = B0FF80CB23D3D61A00C1F62E /* CyanAvatar.reality */; };
-		B0FF80D123D3D61A00C1F62E /* MagentaAvatar.reality in Resources */ = {isa = PBXBuildFile; fileRef = B0FF80CC23D3D61A00C1F62E /* MagentaAvatar.reality */; };
-		B0FF80D223D3D61A00C1F62E /* GreenAvatar.reality in Resources */ = {isa = PBXBuildFile; fileRef = B0FF80CD23D3D61A00C1F62E /* GreenAvatar.reality */; };
-		B0FF80D323D3D61A00C1F62E /* PurpleAvatar.reality in Resources */ = {isa = PBXBuildFile; fileRef = B0FF80CE23D3D61A00C1F62E /* PurpleAvatar.reality */; };
-		B0FF80D423D3D61A00C1F62E /* YellowAvatar.reality in Resources */ = {isa = PBXBuildFile; fileRef = B0FF80CF23D3D61A00C1F62E /* YellowAvatar.reality */; };
+		B0BB3C3D23D3DC20001BF466 /* CyanAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C3823D3DC20001BF466 /* CyanAvatar.rcproject */; };
+		B0BB3C3E23D3DC20001BF466 /* YellowAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C3923D3DC20001BF466 /* YellowAvatar.rcproject */; };
+		B0BB3C3F23D3DC20001BF466 /* PurpleAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C3A23D3DC20001BF466 /* PurpleAvatar.rcproject */; };
+		B0BB3C4023D3DC20001BF466 /* GreenAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C3B23D3DC20001BF466 /* GreenAvatar.rcproject */; };
+		B0BB3C4123D3DC20001BF466 /* MagentaAvatar.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3C3C23D3DC20001BF466 /* MagentaAvatar.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,11 +58,11 @@
 		B058CDE523D38E8300436A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B058CDF323D3977C00436A9F /* ARViewController+Multipeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+Multipeer.swift"; sourceTree = "<group>"; };
 		B058CDF623D397AD00436A9F /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
-		B0FF80CB23D3D61A00C1F62E /* CyanAvatar.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = CyanAvatar.reality; path = ../../../../../../Downloads/CyanAvatar.reality; sourceTree = "<group>"; };
-		B0FF80CC23D3D61A00C1F62E /* MagentaAvatar.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = MagentaAvatar.reality; path = ../../../../../../Downloads/MagentaAvatar.reality; sourceTree = "<group>"; };
-		B0FF80CD23D3D61A00C1F62E /* GreenAvatar.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = GreenAvatar.reality; path = ../../../../../../Downloads/GreenAvatar.reality; sourceTree = "<group>"; };
-		B0FF80CE23D3D61A00C1F62E /* PurpleAvatar.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = PurpleAvatar.reality; path = ../../../../../../Downloads/PurpleAvatar.reality; sourceTree = "<group>"; };
-		B0FF80CF23D3D61A00C1F62E /* YellowAvatar.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = YellowAvatar.reality; path = ../../../../../../Downloads/YellowAvatar.reality; sourceTree = "<group>"; };
+		B0BB3C3823D3DC20001BF466 /* CyanAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = CyanAvatar.rcproject; path = ../../../../../../Downloads/CyanAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C3923D3DC20001BF466 /* YellowAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = YellowAvatar.rcproject; path = ../../../../../../Downloads/YellowAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C3A23D3DC20001BF466 /* PurpleAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = PurpleAvatar.rcproject; path = ../../../../../../Downloads/PurpleAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C3B23D3DC20001BF466 /* GreenAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = GreenAvatar.rcproject; path = ../../../../../../Downloads/GreenAvatar.rcproject; sourceTree = "<group>"; };
+		B0BB3C3C23D3DC20001BF466 /* MagentaAvatar.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = MagentaAvatar.rcproject; path = ../../../../../../Downloads/MagentaAvatar.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,11 +180,11 @@
 		B0FF80CA23D3D60C00C1F62E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B0FF80CB23D3D61A00C1F62E /* CyanAvatar.reality */,
-				B0FF80CD23D3D61A00C1F62E /* GreenAvatar.reality */,
-				B0FF80CC23D3D61A00C1F62E /* MagentaAvatar.reality */,
-				B0FF80CE23D3D61A00C1F62E /* PurpleAvatar.reality */,
-				B0FF80CF23D3D61A00C1F62E /* YellowAvatar.reality */,
+				B0BB3C3823D3DC20001BF466 /* CyanAvatar.rcproject */,
+				B0BB3C3B23D3DC20001BF466 /* GreenAvatar.rcproject */,
+				B0BB3C3C23D3DC20001BF466 /* MagentaAvatar.rcproject */,
+				B0BB3C3A23D3DC20001BF466 /* PurpleAvatar.rcproject */,
+				B0BB3C3923D3DC20001BF466 /* YellowAvatar.rcproject */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -293,14 +293,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0FF80D023D3D61A00C1F62E /* CyanAvatar.reality in Resources */,
-				B0FF80D123D3D61A00C1F62E /* MagentaAvatar.reality in Resources */,
 				B058CDCE23D38E8200436A9F /* LaunchScreen.storyboard in Resources */,
-				B0FF80D223D3D61A00C1F62E /* GreenAvatar.reality in Resources */,
-				B0FF80D323D3D61A00C1F62E /* PurpleAvatar.reality in Resources */,
 				B058CDCB23D38E8200436A9F /* Assets.xcassets in Resources */,
 				B058CDC923D38E8200436A9F /* Main.storyboard in Resources */,
-				B0FF80D423D3D61A00C1F62E /* YellowAvatar.reality in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,9 +322,14 @@
 			files = (
 				B058CDC423D38E8200436A9F /* ARViewController.swift in Sources */,
 				B058CDC223D38E8200436A9F /* AppDelegate.swift in Sources */,
+				B0BB3C4023D3DC20001BF466 /* GreenAvatar.rcproject in Sources */,
+				B0BB3C3E23D3DC20001BF466 /* YellowAvatar.rcproject in Sources */,
+				B0BB3C3D23D3DC20001BF466 /* CyanAvatar.rcproject in Sources */,
+				B0BB3C4123D3DC20001BF466 /* MagentaAvatar.rcproject in Sources */,
 				B058CDF723D397AD00436A9F /* MultipeerSession.swift in Sources */,
 				B058CDF423D3977C00436A9F /* ARViewController+Multipeer.swift in Sources */,
 				B058CDC623D38E8200436A9F /* Experience.rcproject in Sources */,
+				B0BB3C3F23D3DC20001BF466 /* PurpleAvatar.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

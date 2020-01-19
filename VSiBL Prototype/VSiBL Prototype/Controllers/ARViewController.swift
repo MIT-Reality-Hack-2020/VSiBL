@@ -115,6 +115,8 @@ extension ARViewController: ARSessionDelegate {
                 
                 userAvatar.position = [0, -0.4, 0.4] // TODO FIX: Hacky - Needs to be more elegant (e.g. joint or face detection to offset position)
                 
+                userAvatar.orientation = simd_quatf(angle: .pi/2, axis: [1, 0, 0]) // Orientation fix for cone
+                
                 let anchorEntity = AnchorEntity(anchor: participantAnchor)
                 anchorEntity.addChild(userAvatar)
                 
