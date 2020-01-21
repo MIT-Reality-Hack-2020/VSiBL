@@ -18,7 +18,7 @@ Consent was one of the primary topics of discussion for our team during this hac
 ### Technical Description
 Technologies used: RealityKit, ARKit, Multipeer Connectivity, spatial mesh network, Firebase
 
-**Frontned AR**: 
+**Frontend AR**: 
 VSiBL is a multi-user spatial mesh network built on Apple’s RealityKit, ARKit, and Multipeer Connectivity frameworks. Spatial mapping is used to establish a shared reference frame for participants in the same session. The shared reference frame is constructed by looking for overlap in the point clouds of each participant’s device. Once a shared reference frame has been established, participant data is communicated in real-time over a mesh network maintained by Multipeer Connectivity. 
 
 Participant data is visualized using Augmented Reality assets created in Reality Composer. In the demo sample app, participants represent potential team roles such as Developer, Designer, Storyteller, and Staff. Each role is displayed as an “User Icon” using RealityKit as the rendering technology. Of course, VSiBL allows for the display of any data that is desired to be anchored on a person. 
